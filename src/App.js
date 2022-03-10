@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { createStore } from 'redux';
 import HelloWorld from "./HelloWorld";
+import reducer from './reducers';
 
-const store = createStore(reducer);
+const initialState = {
+  tech: 'React'
+}
+const store = createStore(reducer, initialState);
 
 const App = () => {
   // const [tech] = useState("Redux");
