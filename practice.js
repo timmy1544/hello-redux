@@ -29,3 +29,12 @@ const setTechnology = (tech) => {
   }
 }
 export default setTechnology;
+
+//in React
+store.dispatch(setTechnology);
+store.getState().tech
+
+//App
+const render = () => { ReactDOM.render(<App />, getElementbyId('root')); };
+render();
+store.subscribe(render);
